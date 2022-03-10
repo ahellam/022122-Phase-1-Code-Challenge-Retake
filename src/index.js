@@ -28,7 +28,7 @@ function seeFirstMovieDetails(movieObj) {
     movieRuntime.textContent = `${movieObj.runtime} minutes`
     movieShowtime.textContent = movieObj.showtime
 
-    const remainingTickets = movieObj.capacity - movieObj.tickets_sold
+    let remainingTickets = movieObj.capacity - movieObj.tickets_sold
     remainingTicketsGoHere.textContent = remainingTickets
 
     buyTicketButton.addEventListener('click', () => {  // THIS IS WHERE I SPENT 45 MIN BANGING MY HEAD AGAINST THE WALL
